@@ -28,6 +28,10 @@ const server = http.createServer((req, res) => {
             serve('script.js');
             break;
         }
+        case '/images': {
+            app.use(express.static(__dirname + '/images'));
+            break;
+        }
         case '/api': {
             res.writeHead(200, { "Content-Type": "application/json" });
             res.end(JSON.stringify({
