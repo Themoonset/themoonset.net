@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const hostname = 'themoonset.net';
 const port = 3000;
+var express = require('express');
+var app = express();
 
 const server = http.createServer((req, res) => {
     function serve(pathToFile) {
