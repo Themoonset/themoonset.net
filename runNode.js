@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     function serve(pathToFile) {
         fs.readFile(pathToFile, (err, data) => {
             if (err) {
-                console.logg(err);
+                console.log(err);
             } else {
                 res.end(data);
             }
@@ -27,6 +27,14 @@ const server = http.createServer((req, res) => {
         case '/script.js': {
             serve('script.js');
             break;
+        }
+        case '/api': {
+            res.writeHead(200, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({
+                product_id: "xyz12u3",
+                product_name: "NginX injector",
+            })
+        );
         }
     }
 });
