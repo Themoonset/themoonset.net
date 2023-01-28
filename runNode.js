@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const hostname = 'hugolearnjsub.local';
+const hostname = 'themoonset.net';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
