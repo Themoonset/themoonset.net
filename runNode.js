@@ -34,10 +34,10 @@ const server = http.createServer((req, res) => {
             app.use(express.static(__dirname + '/images'));
             break;
         }
-        case '/webhook.php': {
-            serve('github.php');
-            break;
-        }
+	/*case '/github.php':{
+    		serve('github.php');
+		break;
+	}*/
         case '/api': {
             res.writeHead(200, { "Content-Type": "application/json" });
             res.end(JSON.stringify({
