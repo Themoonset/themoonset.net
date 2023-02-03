@@ -1,101 +1,68 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Funny Eyes</title>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="thiagodnf">
-		<meta name="description" content="Control me with your mouse">
-		<meta name="keywords" content="funny eyes,eye,mouse,mouse move,eye tracking,tracking,fun,funny">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-colorpicker.min.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="pull-right">
-						<a href="#" data-toggle="modal" data-target="#changeColorModal" class="dont-select">Change Colors</a>
-					</div>
-				</div>
-			</div>
-			<canvas id="canvas" width="600" height="600"></canvas>			
-		</div>
-		<div class="modal fade" id="changeColorModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel">Change Colors</h4>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-md-4">Eyes</div>
-							<div class="col-md-8">
-								<div class="input-group colorpicker-color-eyes">
-									<input type="text" value="" class="form-control" id="input-color-eyes" />
-									<span class="input-group-addon"><i></i></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">Background Eyes</div>
-							<div class="col-md-8">
-								<div class="input-group colorpicker-color-background-eyes">
-									<input type="text" value="" class="form-control" id="input-color-background-eyes" />
-									<span class="input-group-addon"><i></i></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">Background Mouth</div>
-							<div class="col-md-8">
-								<div class="input-group colorpicker-color-background-mouth">
-									<input type="text" value="" class="form-control" id="input-color-background-mouth" />
-									<span class="input-group-addon"><i></i></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">Border Mouth</div>
-							<div class="col-md-8">
-								<div class="input-group colorpicker-color-border-mouth">
-									<input type="text" value="" class="form-control" id="input-color-border-mouth" />
-									<span class="input-group-addon"><i></i></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">Background Screen</div>
-							<div class="col-md-8">
-								<div class="input-group colorpicker-color-background-screen">
-									<input type="text" value="" class="form-control" id="input-color-background-screen" />
-									<span class="input-group-addon"><i></i></span>
-								</div>
-							</div>
-						</div>						
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap-colorpicker.min.js"></script>
-		<script src="js/script.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIN</title>
+    <meta id="wxKeywords" name="Keywords" content="<keywords />">
+    <meta id="wxDescription" name="Description" content="<description />"/>
+    <meta name="apple-touch-fullscreen" content="YES"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="pragram" content="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="assets/css/actui.css">
+    <link rel="stylesheet" href="assets/css/actui_animate.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+<div class="ui-content">
+    <!--顶部图-->
+    <div class="ui-abs ui-bg-full index-banner">
+    </div>
+    <!--导航-->
+    <div class="ui-flex nav-menu-container ui-bg-full J-menu">
+      
+    </div>
+    <!--content-->
+    <div class="content-box ui-text-center">
+         <!-- <ul class="list-content ui-flex ui-text-center J-good-list"> -->
+            <!-- <li data-icd="3">
+              <a href="javascript:void(0);">0</a>
+            </li> -->
+        <!-- </ul> -->
+        <h3>短视频推荐</h3>
+        <div class="video-container J-video-container ui-flex-between">
+        </div>
+        <!-- <div class="LoadMore ui-text-center J-tap-page">加载更多</div> -->
+        <!-- loading -->
+        <div class="loading dis-none" id="loading">
+            <span class="flower-loader"></span>
+        </div>
+    </div>
+</div>
 
-		  ga('create', 'UA-46693870-3', 'auto');
-		  ga('send', 'pageview');
+<!--弹窗-->
+<div class="J-pop-toast none" id="msg"
+     style="z-index:9999;left: 50%; transform: translateX(-50%);  display:none; width: 40%; position: fixed;background:none;top:50%;">
+    <p class="toast-msg"
+       style="background: none repeat scroll 0 0 #000; border-radius: 30px;color: #fff; margin: 0 auto;padding: .5rem .2rem;text-align: center;width: 100%;opacity: 0.8;">
+    </p>
+</div>
+<!-- video -->
+<div class="video-pop ui-abs dis-none J-video-pop">
+    <video height="100%" id="videoPlay1"  preload="auto" src="" type="" width="100%" x5-video-player-type="h5" x5-video-player-fullscreen="true"  playsinline="true" webkit-playsinline="true"   style="height:100%;"></video>
+    <span class="ui-abs close-btn J-close-btn">关闭</span>
+</div>
+<!-- 回到顶部 -->
+<a class="dis-none" href="javascript:;" id="btn" title="回到顶部"style="width:2rem; 
+height:2rem; position:fixed; right:.2rem; bottom:.2rem; 
+background:url('./assets/img/scroll_top.png') no-repeat; background-size:100%;">
+</a>
 
-		</script>		
-  </body>
+</body>
 </html>
