@@ -1,10 +1,9 @@
-let total = 0, count = 1;
-console.log(count);
-while (count <= 10) {
-    total += count;
-    count += 1;
-    console.log(count);
-}
+const chessboardSpace = "# ";
+let chessboardSpacing = 20;
+let chessboard = chessboardSpacing;
 
-console.log(total);
-// -> 55
+for (let chessboard = chessboardSpacing; chessboard > 0; chessboard--){
+    if (chessboard % 2 == 0) {
+        console.log(chessboardSpace.repeat(chessboardSpacing));
+    } else console.log(" " + chessboardSpace.repeat(chessboardSpacing)); 
+}
