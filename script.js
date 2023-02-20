@@ -1,9 +1,10 @@
-const chessboardSpace = "# ";
-let chessboardSpacing = 20;
-let chessboard = chessboardSpacing;
-
-for (let chessboard = chessboardSpacing; chessboard > 0; chessboard--){
-    if (chessboard % 2 == 0) {
-        console.log(chessboardSpace.repeat(chessboardSpacing));
-    } else console.log(" " + chessboardSpace.repeat(chessboardSpacing)); 
+function wrapValue(n) {
+    let local = n;
+    return () => local;
 }
+
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(7);
+
+console.log(wrap1());
+console.log(wrap2());
