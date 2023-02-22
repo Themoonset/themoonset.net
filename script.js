@@ -20,9 +20,8 @@ function isEven(num) {
     } else if (num == 1) {
         return false;
     } else {
-        function isEven(num) {
-            num - 2;
-        };
+        num - 2;
+        function isEven(num);
     }
 }
 
