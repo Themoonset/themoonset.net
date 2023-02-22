@@ -21,7 +21,7 @@ function isEven(num) {
         return false;
     } else {
         num - 2;
-        function isEven(num);
+        function isEven(num)
     }
 }
 
