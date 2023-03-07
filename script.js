@@ -1,13 +1,5 @@
-console.log(countChar("Bofadeez", "B"));
-// - > 2
-console.log(countChar("kakkerlak", "k"));
-// - > 4
+let anObject = { left: 1, right: 2 };
 
-function countChar(string, letter) {
-    let letterCount = 0;
-    for (let count = 0; count < string.length; count++) {
-        if (string[count] == letter) {
-            letterCount++;
-        } 
-    } return letterCount;
-}
+console.log(anObject.left);
+
+delete anObject.left;
